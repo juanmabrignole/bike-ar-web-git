@@ -1,0 +1,637 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap');
+
+/*Fuente Local*/
+@font-face {
+    font-family: "heebo-light", sans-serif;
+    src: url("../fonts/Heebo-Light.ttf");
+}
+
+@font-face {
+    font-family: "heebo-regular" , sans-serif;
+    src: url("../fonts/Heebo-Regular.ttf");
+}
+
+/*Selector Universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    margin-left: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+
+/*/section {
+    margin-left: 40px;
+}*/
+
+/*section article {
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+}*/
+
+section article p{
+    font-size: 40px;
+}
+
+/*Selector de ID*/
+/*#bordes-header{
+    border: 5px solid black;
+}*/
+
+/*Selector de Clase*/
+.links-style{
+    font-family: 'Heebo', sans-serif;
+    color: red;
+}
+
+/*Selectores After Class*/
+
+h3 {
+    font-family: "heebo-regular", sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: blueviolet;
+    text-align: center;
+}
+
+.logo-img {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.links-style {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: brown;
+    text-decoration: none;
+}
+
+.estilo-productos {
+    width: 50%;
+}
+
+#estilos-footer {
+    background-color: aquamarine;
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+}
+
+#estilos-footer p{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+/*h1, h3, p {
+    font-size: 50px;
+    color: rgba(red, green, blue, .5);
+}*/
+
+/*Selectores*/
+/*Selectores de Etiqueta*/
+
+
+
+/*Selector de clase*/
+.links-nosotros {
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
+
+.fuente-links {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Selector ID*/
+#estilos-footer {
+    background-color: aqua;
+}
+
+/*Herencia*/
+/*p {
+    font-size: 25px;
+}
+
+p {
+    color: red;
+}*/
+
+
+/*Background-image*/
+.back-productos {
+    height: 900px;
+    width: 100%;
+    /*Background-image*/
+    background-image: url("../recursos/imagenes/bici-ciudad.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Box-modeling*/
+.box-modeling{
+    border: 5px solid black;
+    width: 500px;
+    height: 200px;
+    padding: 20px 30px 40px 30px;
+    margin: 20px 30px;
+}
+
+.box-modeling h5{
+    font-size: 40px;
+}
+
+/*a {
+    display: block;
+}*/
+
+/*Comentario CSS*/
+/*FlexBox*/
+
+.flex-container {
+    border: 1px solid black;
+    background: #ccc;
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+
+    /*Propiedades de la caja*/
+    /*Activamos Flexbox*/
+    display: flex;
+    /*Definimos cual es el eje principal, si es una fila (row) o es una columna (column)*/
+    flex-direction: row;
+    /*Defino el desborde o salto de línea*/
+    flex-wrap: wrap;
+    /*Alineamos los elementos en el eje principal*/
+    justify-content: flex-start;
+    /*Alineamos los elementos en el eje secundario*/
+    align-items: flex-start;
+    /*Espacio entre líneas*/
+    /*align-content: space-evenly;*/
+    
+
+}
+
+.caja {
+    /*Box-modeling*/
+    width: 120px;
+    height: 120px;
+    border: 1px solid gray;
+    margin: 5px;
+
+    /*Tipografías*/
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: "heebo-light", sans-serif;
+}
+
+/*Propiedades de los flex-items*/
+.c1 {
+    background-color: lightblue;
+    /*Defino el óden de aparición*/
+    order: 3;
+}
+
+.c2{
+    background-color: lightcoral;
+    order: 1;
+    /*Derecho a crecer*/
+    flex-grow: 5;
+}
+
+.c3 {
+    background-color: lightgreen;
+    order: 2;
+}
+
+/*CSS GRIDS Práctica*/
+
+.grid-container{
+    /*Box-modeling*/
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid black;
+    margin: auto;
+    height: 900px;
+
+    /*Tipografia*/
+    font-size: 50px;
+    text-align: center;
+
+    /*Activar Grids*/
+    display: grid;
+    /*Definimos la cantidad de columnas y su ancho (width)*/
+    grid-template-columns: 1fr 2fr 1fr;
+     /*Definimos la cantidad de filas y su alto (height)*/
+    grid-template-rows: repeat(4,1fr);
+    /*Gutters o huecos entre columnas*/
+    column-gap: 10px;
+    /*Gutters o huecos entre filas*/
+    row-gap: 10px;
+    /*Eje horizontal
+    justify-items: start;
+    */
+    /*Eje vertical
+    align-items: center;
+    */
+    /*Muevo todos los elementos en el eje horizontal*/
+    /*justify-content: center;*/
+    /*Muevo todos los elementos en el eje Vertical*/
+    /*align-content: end;*/
+
+}
+
+/*Divs que están diréctamente dentro del grid container*/
+.grid-container > div {
+    padding: 20px;
+    color: #fff;
+    background: #2f89fc;
+} 
+
+/*Grid Áreas*/
+#grilla {
+    display: grid;
+    /*grid areas*/
+    grid-template-areas: 
+    "nav    header      header"
+    "nav    productos   publicidad"
+    "nav    servicios   publicidad"
+    "nav    pie         pie"
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 150px 1fr 75px;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+/*Asignamos las áreas*/
+
+#banner {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    background: lightseagreen;
+}
+
+#productos {
+    grid-area: productos;
+    background: lightcoral;
+}
+
+#servicios {
+    grid-area: servicios;
+    background: lightslategray;
+}
+
+#navgrid {
+    grid-area: nav;
+    background: lightgoldenrodyellow;
+}
+
+aside {
+    grid-area: publicidad;
+    background: lightslategrey;
+}
+
+footer {
+    grid-area: pie;
+    background: lightsalmon;
+}
+
+/*Responsive*/
+/*Por defecto*/
+main {
+    background-color: #2f89fc;
+}
+
+/*Navbar con flexbox*/
+nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    font-family: "heebo-light", sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Pseudoclases
+a:hover{
+    background: #f10086;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+a:active{
+    background: blueviolet;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited{
+    color: blue;
+}
+*/
+
+/*First and last child*/
+.grupo{
+    width: 500px;
+    margin: 20px auto;
+    background: gray;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.parrafos p:first-child {
+    background: blue;
+    color: white;
+}
+
+.parrafos p:last-child {
+    background: green;
+    color: black;
+}
+
+/*first and last type*/
+.elementos p:first-of-type{
+    background-color: #f10086;
+    color: white;
+}
+
+.elementos p:last-of-type{
+    background-color: #ca6684;
+    color: white;
+}
+
+/*.elementos div:first-of-type{
+    background-color: #00f189;
+    color: black;
+}*/
+
+.elementos div:last-of-type{
+    background-color: #cbd930;
+    color: black;
+}
+
+/*nth-child y nth-last-child*/
+/*.lista :nth-last-child(5){
+    background: lightcoral;
+    color: white;
+}*/
+
+.lista :nth-last-child(odd){
+    background: lightseagreen;
+    color: black;
+}
+
+/*BEM*/
+.contenedor{
+    max-width: 500px;
+    width: 100%;
+    margin-top: 250px;
+}
+
+.tarjeta{
+    margin: 20px;
+    width: 400px;
+    border: 5px solid black;
+    text-align: center;
+}
+
+.tarjeta__miniatura{
+    height: 500px;
+    background: red;
+}
+
+.tarjeta__imagen{
+    width: 80%;
+    padding-top: 20px;
+}
+
+.tarjeta__textos{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+}
+
+.tarjeta__titulo{
+    font-size: 30px;
+    text-align: center;
+}
+
+.tarjeta__titulo--negrita{
+    font-weight: bold;
+}
+
+.tarjeta__enlace{
+    color: #f10086;
+    padding: 10px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.tarjeta__parrafo{
+    max-width: 100%;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.boton {
+    font-size: 14px;
+    padding: 8px 35px;
+    background: #000;
+    border: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+/*Modificador*/
+.boton--alternativo{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*Bici productos con CSS GRID*/
+.bike-img {
+    width: 350px;
+  }
+  
+  .grid-imagenes {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    /*activamos grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+    gap: 10px;
+  }
+  
+  /*Botones prediseñados*/
+  button {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    margin-top: 10px;
+  }
+  
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  }
+  
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+  
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+
+  /*BEM afterClass*/
+  /*Defino los estilos de mi bloque*/
+.promociones{
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*defino los estilos de mi primer elemento del bloque promociones*/
+.promociones__imagenes{
+    width: 70%;
+}
+
+/*defino los estilos de mi segundo elemento del bloque promociones*/
+.promociones__titulo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.promociones__titulo--alternativo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: #ca6684;
+}
+
+.navbar-collapse{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Bootstrap Icons como font*/
+
+.bi-instagram{
+    font-size: 40px;
+    color: #ca6684;
+}
+
+
+/*Grid Áreas, Responsive*/
+
+/*Boostrap responsive*/
+@media screen and (max-width: 992px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+
+/*MediaQueries*/
+@media screen and (max-width: 479px){
+
+    /*Grid areas responsive*/
+    #grilla {
+        height: 500px;
+        display: grid;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "productos"
+        "servicios"
+        "publicidad"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6,1fr);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 700px) {
+    
+    main {
+        background-color: lightpink;
+    }
+
+    h3 {
+        font-size: 50px;
+        font-weight: lighter;
+        font-family: "heebo-light", sans-serif;
+        color: red;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1200px){
+    main {
+        background-color: lightslategray;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../recursos/logo/e-bike.png" type="image/x-icon">
+    <!--Boostrap-->
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!--Boostrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Hoja de estilos CSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Bikear-Contacto</title>
+</head>
+<body>
+
+    <!--Navbar con Bootstrap-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">
+                <img src="../recursos/logo/e-bike.png" alt="logo-bikear" width="50">
+            </a>
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../productos">Productos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../promociones">Promociones</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--cards con bootstrap-->
+      <div class="card" style="width: 18rem;">
+        <img src="../recursos/imagenes/bici-ciudad.jpg" class="card-img-top" alt="bici-ciudad">
+        <div class="card-body">
+          <h5 class="card-title">Bicicleta Eléctrica</h5>
+          <p class="card-text">Aquí encontrás la mejor bicleta eléctrica para pasear por la ciudad.</p>
+          <button type="button" class="btn btn-outline-secondary">Saber Más</button>
+        </div>
+      </div>
+
+      <!--Slider bootstrap-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../recursos/imagenes/bici-andando.jpg" class="d-block w-100" alt="bici-andando">
+          </div>
+          <div class="carousel-item">
+            <img src="../recursos/imagenes/bici-montana.jpg" class="d-block w-100" alt="bici-montaña">
+          </div>
+          <div class="carousel-item">
+            <img src="../recursos/imagenes/bici-producto-01.jpg" class="d-block w-100" alt="bici-producto">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <i class="bi bi-instagram"></i>
+
+    <h3>Decínos Hola!</h3>
+
+    <form action="procesar.php" method="get">
+
+        <p>
+        <label for="nombre">Ingrese su nombre: </label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        </p>
+
+        <p>
+        <label for="apellido">Ingrese su Apellido:</label>
+        <input type="text" name="apellido" placeholder="Ingrese su apellido">
+        </p>
+
+        <p>
+            <label for="email">Ingrese su correo eléctrónico: </label>
+            <input type="email" name="email" placeholder="hola@servidor.com.ar">
+        </p>
+
+        <p>
+            <label for="pass">Ingrese su contraseña: </label>
+            <input type="password" name="pass" placeholder="Ingrese su contraseña" >
+        </p>
+
+        <!--Input Radio-->
+        <h3>Elija su rodado: </h3>
+
+        <label for="rodado">12 Pulgadas</label>
+        <input type="radio" name="rodado" value="12">
+
+        <label for="rodado">16 Pulgadas</label>
+        <input type="radio" name="rodado" value="16">
+
+        <label for="rodado">20 Pulgadas</label>
+        <input type="radio" name="rodado" value="20">
+
+         <!--Input Checkbox-->
+        <h3>Elija superficie: </h3>
+
+        <label for="superficie">Tierra</label>
+        <input type="checkbox" name="superficie" value="tierra">
+
+        <label for="superficie">Ciudad</label>
+        <input type="checkbox" name="superficie" value="ciudad">
+
+        <label for="superficie">Arena</label>
+        <input type="checkbox" name="superficie" value="arena">
+
+        <!--Menú Deplegable-->
+        <h3>Elija su talle: </h3>
+        <select name="">
+            <option value="s">Small</option>
+            <option value="medium">Medium</option>
+            <option value="l">Large</option>
+        </select>
+
+        <h3>Dejanos tu comentario</h3>
+
+        <!--Textarea-->
+        <textarea name="mensaje" cols="30" rows="10"></textarea>
+
+        <p>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar Formulario</button>
+        </p>
+
+    </form>
+    
+    <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
