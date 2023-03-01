@@ -21,18 +21,63 @@
 </head>
 <body>
 
-	<h1>Nueva Barra de Navegacion con Git</h1>
 	
-	<nav>
-        <a href="../index.html">
-          <img class="logo-img" src="../recursos/logo/e-bike.png" alt="logobikear">
-          <a class="links-nosotros" href="../paginas/nosotros.html">Nosotros</a> 
-          <a class="links-nosotros fuente-links" href="../paginas/productos.html">Productos</a> 
-        </a>
-    </nav>
+		<!--Navbar con Bootstrap-->
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<a class="navbar-brand" href="#">
+					<img src="./recursos/logo/e-bike.png" alt="logo-bikear" width="50">
+				</a>
+				<ul class="navbar-nav d-flex justify-content-center align-items-center">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./paginas/productos.html">Productos</a>
+				  </li>
+	
+				  <li class="nav-item">
+					<a class="nav-link" href="./paginas/promociones.html">Promociones</a>
+				  </li>
+	
+				  <li class="nav-item">
+					<a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
 
-	<img src="./recursos/imagenes/bici-producto-02.jpg" alt="bici-02">
-
+		  <!--Slider bootstrap-->
+		  <div id="carouselExample" class="carousel slide">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="./recursos/imagenes/bici-andando.jpg" class="d-block w-100" alt="bici-andando">
+			  </div>
+			  <div class="carousel-item">
+				<img src="./recursos/imagenes/bici-montana.jpg" class="d-block w-100" alt="bici-montaña">
+			  </div>
+			  <div class="carousel-item">
+				<img src="./recursos/imagenes/bici-ciudad.jpg" class="d-block w-100" alt="bici-producto">
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+	
 	
 	  <div class="accordion" id="accordionExample">
 		<div class="accordion-item">
